@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home - MyShop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>MyShop</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="cart.html">Cart 🛒</a>
+    </nav>
+  </header>
+
+  <!-- Sponsor Banner -->
+  <section class="banner">
+    <img src="https://png.pngtree.com/background/20210710/original/pngtree-shopping-mall-supermarket-selection-merchandise-poster-background-material-picture-image_1048684.jpg" alt="Shopping Banner">
+  </section>
+
+  <!-- Featured Products -->
+  <section class="products">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+
+      <!-- Electronics -->
+      <div class="product-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeBeB0PuSZle8eOXeswxZ-0bL9-PhIBR2xGQ&s" alt="Smartphone">
+        <h3>iPhone 14 Pro</h3>
+        <p>$999</p>
+        <button onclick="addToCart('iPhone 14 Pro', 999)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://sony.scene7.com/is/image/sonyglobalsolutions/Headphones-primary%20tout-mobile-1534x1083?$toutMobile$&fmt=png-alpha" alt="Headphones">
+        <h3>Sony Headphones</h3>
+        <p>$50</p>
+        <button onclick="addToCart('Sony Headphones', 50)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQ96Ch23sLXm333hQ3P_bM7nyo9qr0ZkrBZ-aktLhgXtmFin6a7rhnLiNRVo090TkaFTmdZSicy42NkmvCnhYzTMymESvRd6fHwdLLRILhIP-_So2ALlk_lphxCTybppU37YxbY2RA&usqp=CAc" alt="Laptop">
+        <h3>Lenovo ThinkPad</h3>
+        <p>$850</p>
+        <button onclick="addToCart('Lenovo ThinkPad', 850)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/ML763?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1676834040486" alt="Smart Watch">
+        <h3>Apple Watch</h3>
+        <p>$399</p>
+        <button onclick="addToCart('Apple Watch', 399)">Add to Cart</button>
+      </div>
+
+      <!-- Fashion -->
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab" alt="T-Shirt">
+        <h3>Cotton T-Shirt</h3>
+        <p>$25</p>
+        <button onclick="addToCart('Cotton T-Shirt', 25)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/61w38lnBISL._UY1100_.jpg" alt="Jeans">
+        <h3>Blue Jeans</h3>
+        <p>$40</p>
+        <button onclick="addToCart('Blue Jeans', 40)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUi39XBxtsIOpEJjpqdKvtyn6cKo5cKR2Oiw&s" alt="Sneakers">
+        <h3>Sport Sneakers</h3>
+        <p>$70</p>
+        <button onclick="addToCart('Sport Sneakers', 70)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f" alt="Jacket">
+        <h3>Winter Jacket</h3>
+        <p>$90</p>
+        <button onclick="addToCart('Winter Jacket', 90)">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+</body>
+<script src="script.js"></script>
+</html>
