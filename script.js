@@ -1,50 +1,16 @@
-function showRegister() {
-  document.getElementById("loginForm").style.display = "none";
-  document.getElementById("registerForm").style.display = "block";
-}
-
-function showLogin() {
-  document.getElementById("registerForm").style.display = "none";
-  document.getElementById("loginForm").style.display = "block";
-}
-
+// Fake login
 function login() {
-  const username = document.getElementById("loginUsername").value;
-  const password = document.getElementById("loginPassword").value;
+  let username = document.getElementById("username").value;
+  let password = document.getElementById("password").value;
 
-  const storedUsername = localStorage.getItem("username");
-  const storedPassword = localStorage.getItem("password");
-
-  if (username === storedUsername && password === storedPassword) {
-    alert("Login successful!");
-    window.location.href = "home.html"; // redirect to home page
+  if (username && password) {
+    alert("Login Successful!");
+    console.log("User logged in:", username);
+    window.location.href = "home.html";
   } else {
-    alert("Invalid username or password");
+    alert("Enter valid details");
+    console.log("Login failed: Empty fields");
   }
-}
-
-function register() {
-  const username = document.getElementById("registerUsername").value;
-  const email = document.getElementById("registerEmail").value;
-  const password = document.getElementById("registerPassword").value;
-  const confirmPassword = document.getElementById("registerConfirmPassword").value;
-
-  if (!username || !email || !password || !confirmPassword) {
-    alert("Please fill all fields!");
-    return;
-  }
-
-  if (password !== confirmPassword) {
-    alert("Passwords do not match!");
-    return;
-  }
-
-  localStorage.setItem("username", username);
-  localStorage.setItem("email", email);
-  localStorage.setItem("password", password);
-
-  alert("Registration successful! You can now login.");
-  showLogin();
 }
 
 // Cart logic
@@ -95,4 +61,3 @@ function placeOrder() {
 }
 
 window.onload = displayCart;
-
